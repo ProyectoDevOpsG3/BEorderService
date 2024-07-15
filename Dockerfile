@@ -14,6 +14,6 @@ FROM adoptopenjdk:11-jre-hotspot
 
 WORKDIR /app
 
-COPY --from=builder /app/target/payments-service-example-0.0.1-SNAPSHOT.jar .
+COPY --from=builder /app/target/orders-service-example-0.0.1-SNAPSHOT.jar .
 
-CMD ["java", "-jar", "payments-service-example-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "orders-service-example-0.0.1-SNAPSHOT.jar"]
